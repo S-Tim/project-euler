@@ -17,8 +17,9 @@ def collatz(num):
             num = num * 3 + 1
 
         sequence.append(num)
-    
+
     return sequence
+
 
 collatz_lengths = [(x, len(collatz(x))) for x in range(1, 1_000_000)]
 
